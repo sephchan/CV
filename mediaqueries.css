@@ -74,6 +74,9 @@
   .nav-links li a {
     font-size: 1rem;
   }
+  .footer-nav-links li a {
+    font-size: 1rem;
+  }
   .experience-sub-title {
     font-size: 1.25rem;
   }
@@ -81,6 +84,11 @@
     font-size: 1.5rem;
   }
   .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .footer-nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
@@ -98,5 +106,6 @@
   }
   .text-container {
     text-align: justify;
+    font-size: 1rem;
   }
 }
