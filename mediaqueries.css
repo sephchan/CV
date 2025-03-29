@@ -12,8 +12,70 @@
   #desktop-nav {
     display: none;
   }
-  #hamburger-nav {
+  #hamburger-nav-2 {
+    /* width: 100%; */
+    /* height: 80px; */
     display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* padding: 0 30px; */
+  }
+  .hamburger-2 {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger-2 .line {
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin: 6px 0;
+    transition: all 0.3s ease-in-out;
+  }
+  .hamburger-2.active .line:first-child {
+    transform: rotate(45deg) translate(7px, 4px);
+  }
+  .hamburger-2.active .line:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger-2.active .line:last-child {
+    transform: rotate(-45deg) translate(8px, -6px);
+  }
+
+  .nav-bar-2 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: white;
+    transition: 0.2s;
+    overflow: hidden;
+  }
+  .nav-bar-2.active {
+    z-index: 1;
+  }
+  .nav-bar-2 ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 80px auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .nav-bar-2.active ul {
+    opacity: 1;
+  }
+  .nav-bar-2 ul li {
+    list-style: none;
+  }
+  .nav-bar-2 ul li a {
+    display: block;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+  }
+  .nav-bar-2 ul li a:hover {
+    text-decoration: none;
   }
   #experience,
   .experience-details-container {
@@ -44,9 +106,9 @@
 }
 
 @media screen and (max-width: 600px) {
-  #conbtact,
+  #contact,
   footer {
-    height: 40vh;
+    height: 30vh;
   }
   #profile {
     height: 83vh;
